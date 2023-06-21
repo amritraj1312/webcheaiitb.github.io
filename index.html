@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ChEA-IITB</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @font-face {
+            font-family: tesla;
+            src: url('TESLA.ttf');
+        }
+        .content .frontpara1{
+            font-family: tesla;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo"><img src="cheaorange.png" height="73" width="120"/></h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li id="home"><a href="index.html">HOME</a></li>
+                    <li id="events"><a href="events.html">EVENTS</a></li>
+                    <li id="blogs"><a href="blogs.html">BLOGS</a></li>
+                    <li id="publications"><a href="publications.html">PUBLICATIONS</a></li>
+                    <li id="links"><a href="links.html">LINKS</a></li>
+                    <li id="contacts"><a href="contacts.html">CONTACT</a></li>
+                    <li><a href="#">SCHEDULE</a></li>
+                </ul>
+            </div>
+
+        </div> 
+        <div class="frontpage">
+            <div class="content">
+                <h1>The <span class="frontpara1">CHEMICAL</span>Engineering<br>Association, IIT Bombay</h1><br>
+                <p class="par"><b id="amrit">Transforming atoms into innovations:</b> <b>where science meets ingenuity!</b>
+                <br><b>Chemical Engineering:</b> Catalysts of Innovation, Unleashing the Power of Science to <br>Shape a 
+                Sustainable and Prosperous World.<br>
+                The <b><span class="frontpara2">Chemical </span>Engineering Association <span class="frontpara2">(ChEA)</span></b>, established in<span class="frontpara2"> 1965</span>, looks back<br> with pride
+                 with an enviable record of a number of educational, informative, and informal <br>events. 
+                 The records have become even more enviable when considered in the context <br>of the fact that such events are organized
+                  almost entirely by students with remarkably<br> keen participation and generous support from professors and alumni.
+                </p>
+
+                <!-- <button class="cn"><a href="#">JOIN US</a></button> -->
+            </div>
+            <div class="shake-horizontal">
+                <img src="images/loading.png" width="400px" height="560px">
+            </div>
+        </div>
+    </div>
+    <div class="lowerpart">
+        <div class="embeddedvdo">
+            <iframe width="900" height="505" src="https://www.youtube.com/embed/JOLQSrkcSAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="lowerh3">
+                It's an association of the Alumni, Faculty, Students, and Staff of the Chemical Engineering Department. <br><br>
+                Spreading knowledge and awareness in the field of chemical engineering through meetings, discussions, workshops, seminars, etc.<br><br>
+                Increasing the spirit of brotherhood and co-operation amongst the members of the association.<br><br>
+                Developing leadership, initiative, and inculcating a sense of responsibility amongst the members of the association.<br><br>
+                Simulate collaborative efforts among industry, universities, government, professional societies, and other chemical associations in India and abroad.
+        </div>
+    </div>
+    <div class="whatwedo">
+        <h2>Here's <span>What We Do !!</span></h2>
+    </div>
+    <section class="datadashboard">
+        <div class="container-grid">
+            <div>
+                <h2 class="counter-numbers" id="rank1"> 1</h2>
+                <p>National Rank</p>
+            </div>
+            <div>
+                <h2 class="counter-numbers" data-number="45">0+</h2>
+                <p>Faculties</p>
+            </div>
+            <div>
+                <h2 class="counter-numbers" data-number="720">0+</h2>
+                <p>Students</p>
+            </div>
+            <div>
+                <h2 class="counter-numbers" data-number="1800">0+</h2>
+                <p>Reach</p>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        const counterNum = document.querySelectorAll(".counter-numbers");
+        const speed = 45;
+        counterNum.forEach((currentElement) => {
+            const updateNumber = () =>{
+                const targetNumber = parseInt(currentElement.dataset.number);
+                const initialNumber = parseInt(currentElement.innerText);
+                const incrementNumber = Math.trunc(targetNumber/speed);
+                if(initialNumber<targetNumber){
+                    currentElement.innerText= `${initialNumber+incrementNumber}+`;
+                    setTimeout(updateNumber,100);
+                }
+            };
+            updateNumber();
+        });
+
+    </script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <div class="form">
+        <div class="icons">
+            <a href="https://www.facebook.com/cheaiitb"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://instagram.com/chea_iitb?utm_medium=copy_link"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://www.linkedin.com/company/chea-iit-bombay/"><ion-icon name="logo-linkedIn"></ion-icon></a>
+            <a href="https://www.youtube.com/@chemicalengineeringassocia2744/about"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="https://wa.me/qr/2QMQELB2RFMUM1"><ion-icon name="logo-whatsapp"></ion-icon></a>
+        </div>
+        <h2>Website maintained by : <img src="cheaorange.png" height="58" width="92"/></h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EVENTS</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo"><img src="cheaorange.png" height="63" width="101"/></h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li id="home"><a href="index.html">HOME</a></li>
+                    <li id="events"><a href="events.html">EVENTS</a></li>
+                    <li id="blogs"><a href="blogs.html">BLOGS</a></li>
+                    <li id="publications"><a href="publications.html">PUBLICATIONS</a></li>
+                    <li id="links"><a href="links.html">LINKS</a></li>
+                    <li id="contacts"><a href="contacts.html">CONTACT</a></li>
+                    <li><a href="#">SCHEDULE</a></li>
+                </ul>
+            </div>
+        </div> 
+        <!-- <div class="content"> -->
+            <!-- <h1>The <span>Chemical</span> Engineering <br>Association, IIT Bombay</h1><br> -->
+            <!-- <p class="par"><b id="amrit">Transforming atoms into innovations:</b> <b>where science meets ingenuity!</b> -->
+            <!-- <br><b>Chemical Engineering:</b> Catalysts of Innovation, Unleashing the Power of Science to Shape a <br> -->
+            <!-- Sustainable and Prosperous World. -->
+            <!-- </p> -->
+<!--                  -->
+        <!-- </div> -->
+        <div class="slider">
+            <div class="slides">
+              <!--radio buttons start-->
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+              <input type="radio" name="radio-btn" id="radio4">
+              <!--radio buttons end-->
+              <!--slide images start-->
+              <div class="slide first">
+                <img src="images/image41.jpg" alt="">
+              </div>
+              <div class="slide">
+                <img src="images/image42.jpg" alt="">
+              </div>
+              <div class="slide">
+                <img src="images/image44.JPG" alt="">
+              </div>
+              <div class="slide">
+                <img src="images/image45.webp" alt="">
+              </div>
+              <!--slide images end-->
+              <!--automatic navigation start-->
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+              </div>
+              <!--automatic navigation end-->
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+          </div>
+          <!--image slider end-->
+          <script type="text/javascript">
+          var counter = 1;
+          setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+              counter = 1;
+            }
+          }, 5000);
+          </script>
+        <section class="events" id="event">
+            <h2>ChEA<span> Events</span></h2>
+
+            <div class="event-container">
+                <div class="events-box">
+                    <img src="images/image1.webp">
+                    <div class="events-layer">
+                        <h4>Time Capsule</h4>
+                        <p>The Time Capsule - The 25 year Journey, is a one of its kind event where a panel of distinguished alumni help and interact with the students to provide them with unparalleled professional experience and also help the chemical engineers of today to diversify and find what drives them.</p>
+                        <button class="cn"><a href="#">View More</a></button>
+                    </div>
+                </div>
+                <div class="events-box">
+                    <img src="images/image2.webp">
+                    <div class="events-layer">
+                        <h4>Valfi</h4>
+                        <p>A fun-event which serves as a farewell to all the 4th Year students. Rejoicing the memories made in their time here, interacting with each other, playing games and experiencing the department senti are the major highlights of this interaction.</p>
+                        <button class="cn"><a href="#">View More</a></button>
+                    </div>
+                </div>
+                <div class="events-box">
+                    <img src="images/image3.webp">
+                    <div class="events-layer">
+                        <h4>Freshie Orieo</h4>
+                        <p>This event serves as the first major interaction between the council and the freshies. The event comes packed full of games and performances. In one line this event can be described as 'Of the Freshers', By the Freshers' and For the Freshers'.</p>
+                        <button class="cn"><a href="#">View More</a></button>
+                    </div>
+                </div>
+                <div class="events-box">
+                    <img src="images/image4.webp">
+                    <div class="events-layer">
+                        <h4>Know Your Profs</h4>
+                        <p>“Know Your Profs” is a video series wherein professors from the department are invited to chat regarding their college days and experiences in academia. It is conducted online as well as offline, as the situation allows. Gaining insight into the professors' experiences and endeavors is the aim</p>
+                        <button class="cn"><a href="#">View More</a></button>
+                    </div>
+                </div>
+                <div class="events-box">
+                    <img src="images/image5.webp">
+                    <div class="events-layer">
+                        <h4>Traditional Day</h4>
+                        <p>A fun, informal event which gives you a chance to meet your roll baap/maa/beta/beti. The event takes place at Jal Vihar in the campus, generally in september. Posings and photoshoots in traditionals are the main highlight.</p>
+                        <button class="cn"><a href="#">View More</a></button>
+                    </div>
+                </div>
+                <div class="events-box">
+                    <img src="images/image6.webp">
+                    <div class="events-layer">
+                        <h4>Core Talks</h4>
+                        <p>Interactive sessions conducted annually with alums one each from the fields of Industry and Higher Studies, which are two of the most sought after options for the chemical engineers of today. These alums not only have an insightful story with them to tell but also answer individual doubts of the students.</p>
+                        <button class="cn"><a href="#">View More</a></button>
+                    </div>
+                </div>
+                <div class="events-box">
+                    <img src="images/image7.webp">
+                    <div class="events-layer">
+                        <h4>Department Trips</h4>
+                        <p>The trips are a means of taking students out of their academic stress. The trip takes off right after the Mid-Semester Exams. In the Autumn Semester, it is usually a 1-day trek while in the Spring Semester it is 2-day trek as well as camping. This is the best way to bond with batchmates and seniors while having fun.</p>
+                        <button class="cn"><a href="#">View More</a></button>
+                    </div>
+                </div>
+                <div class="events-box">
+                    <img src="images/image8.webp">
+                    <div class="events-layer">
+                        <h4>Sport Events</h4>
+                        <p>Apart from academics, students need to be fit and an elegant solution for this is sports.ChEA organises and manages various sports events around the year including outdoor events like full fledged Football and Cricket tournaments and indoor events like TT and Badminton.</p>
+                        <button class="cn"><a href="#">View More</a></button>
+                    </div>
+                </div>
+                <div class="events-box">
+                    <img src="images/image9.webp">
+                    <div class="events-layer">
+                        <h4>Panel Discussions.</h4>
+                        <p>The Changing Role Of Chemical Engineers'  are a series of discussions started in 2021, where our panel of alums discuss the different changes in the vast ever changing global spectrum. The discussions challenge young minds to think out of the box and to apply what they have learnt to this field</p>
+                        <button class="cn"><a href="#">View More</a></button>
+                    </div>
+                </div>
+                <div class="events-box">
+                    <img src="images/image10.webp">
+                    <div class="events-layer">
+                        <h4>Alumni Reunion</h4>
+                        <p>The reunion is a 3 day event where we are fortunate to have the silver jubilee batch of Chemical Engineering Alums . They grace the department and interact with the professors as well as the students of the department to share valuable insights and remarks.</p>
+                        <button class="cn"><a href="#">View More</a></button>
+                    </div>
+                </div>
+                <div class="events-box">
+                    <img src="images/image11.webp">
+                    <div class="events-layer">
+                        <h4>Miscellaneous Events</h4>
+                        <p>A number of events are conducted taking into account the interets of students and need of the hour.<br>
+                            Alumni insightful hybrid sessions, online gaming nights are just to name a few</p>
+                        <button class="cn"><a href="#">View More</a></button>
+                    </div>
+                </div>
+                <div class="events-box">
+                    <img src="images/image12.webp">
+                    <div class="events-layer">
+                        <h4>Convocation</h4>
+                        <p>The pandemic took away the opportunity for the Convocation. They were able to reconnect and relieve that core memory thanks to the wonderful Convocation ceremony.</p>
+                        <button class="cn"><a href="#">View More</a></button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div class="form">
+    
+            <div class="icons">
+                <a href="https://www.facebook.com/cheaiitb"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://instagram.com/chea_iitb?utm_medium=copy_link"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://www.linkedin.com/company/chea-iit-bombay/"><ion-icon name="logo-linkedIn"></ion-icon></a>
+                <a href="https://www.youtube.com/@chemicalengineeringassocia2744/about"><ion-icon name="logo-youtube"></ion-icon></a>
+                <a href="https://wa.me/qr/2QMQELB2RFMUM1"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            </div>
+            <h2>Website maintained by : <img src="cheaorange.png" height="58" width="92"/></h2>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
